@@ -1,0 +1,171 @@
+@font-face {
+	font-family: "WitcherFont";
+	src: url(../Fonts/WitcherFont.ttf);
+}
+
+:root {
+  --light-purple: #ff00e7;
+  --dark-purple: #682666;
+  --bg-color: #433751;
+}
+
+body {
+	background-color: #2A2438;
+	color: white;
+}
+
+.brand {
+	font-family: WitcherFont;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+p {
+	padding: 0 1.8rem;
+}
+
+.nav-link {
+	color: white;
+}
+
+.navbar {
+	background-color: var(--dark-purple);
+}
+
+.container {
+	background-color: var(--bg-color);
+}
+
+.content-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu {
+	border: 1px solid white;
+	display: table;
+	float: left;
+	margin-right: 1.5rem;
+	width: 20.4rem;
+	height: 11rem;
+}
+
+.menu-container {
+	padding: 0px;
+}
+
+.img-brand {
+	height: 4rem;
+}
+
+.navbar-brand {
+	margin-left: 1rem;
+	display: flex;
+    align-items: flex-end;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.content-img {
+	width: 100%;
+    height: auto;
+    padding: 0 10rem;
+}
+
+.caption {
+	display: flex;
+	justify-content: center;
+	margin: 0.7rem;
+}
+
+#fixed-fon {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../Img/background.png);
+	background-size: cover;
+	z-index: -1;
+}
+
+.link {
+	color: white;
+	display: block;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	transition: font-size ease-in-out .15s
+}
+
+.link:hover {
+	color: white;
+	font-size: 1.3rem;
+}
+
+.asd:hover {
+	font-size: 2.5rem;
+}
+
+.scrollup {
+	position: fixed; /* фиксированная позиция */
+	color: #fff; /* цвет текста */
+	background-color: var(--bg-color); /* цвет заднего фона */
+	right: 20px; /* расстояние от правого края */
+	bottom: 0px; /* расстояние от нижнего края */
+	padding: 4px 10px; /* отступы до содержимого блока */
+	font-size: 20px; /* размер шрифта (иконки) */
+	border-top-left-radius: 4px; /* скругление верхнего левого угла */
+	border-top-right-radius: 4px; /* скругление верхнего правого угла */
+	cursor: pointer; /* форма курсора */
+	display: none; /* не отображать элемент */
+	text-align: center; /*выравнивание содержимого элемента по центру */
+	transition: background-color ease-in-out .15s
+}
+
+.scrollup:hover {
+	background-color: var(--light-purple); /* цвет заднего фона при наведении */
+}
+
+blockquote {
+	margin: 0;
+	color: white;
+	padding: 30px 30px 30px 60px;
+	/*border-left: 8px solid var(--light-purple);*/
+	position: relative;
+	background: var(--dark-purle);
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+blockquote:before{
+	/*content: "\201C";*/
+	font-family: Arial;
+	color: var(--light-purple);
+	font-size: 70px;
+	position: absolute;
+	left: 15px;
+	top: 5px;
+}
+blockquote p {
+	font-style: italic;
+	font-size: 24px;
+	margin-top: 0;  
+}
+
+.nav-item>.link {
+	font-size: 1.5rem;
+}
+
+.nav-item>.link:hover {
+	color: white;
+	font-size: 2rem;
+}
+
+.image {
+	width: 10rem;
+}

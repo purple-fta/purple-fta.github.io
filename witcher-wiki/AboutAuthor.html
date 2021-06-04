@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Witcher Wiki</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles/styleAbout.css">
+	<link rel="stylesheet" href="styles/preloader.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="preloader">
+	  	<div class="preloader__row">
+	    	<div class="preloader__item"></div>
+	    	<div class="preloader__item"></div>
+		</div>
+	</div>
+
+	<div id="fixed-fon"></div>
+
+	<div class="container menu-container">
+
+		<div class="navbar navbar-expand-lg">
+			<a href="#" class="navbar-brand">
+				<img src="Img/brand.png" class="img-brand">
+				<h1 class="brand">The Witcher Wiki</h1>
+			</a>
+
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="#" class="link"><b>Главная</b></a>
+					</li>
+					<li class="nav-item">
+						<a href="Wiki.html" class="link"><b>Вики</b></a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="link"><b>Форум</b></a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="link"><b>Донат</b></a>
+					</li>
+					<li class="nav-item">
+						<a href="AboutAuthor.html" class="link"><b>О Авторе</b></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container content-div pt-5">
+		<img src="Img/steam.png" class="image">
+		<div class="caption">
+			PurpleFta(Романов Богдан)
+		</div>
+
+		<p>
+			Эта работа была создана для защиты диплома. В идею создания легла прошлая робота на такуюже тему, созданная год назад. А вдохновления черпал из Fandom Wiki.
+		</p>
+
+		<h3><a target="_blank" href="https://www.instagram.com/romanovbohdan/?hl=ru" class="link asd">Instagram</a></h3>
+		<h3><a target="_blank" href="https://t.me/PurpleFta" class="link asd">Telegram</a></h3>
+		<h3><a target="_blank" href="https://www.reddit.com/user/PurpleFta" class="link asd">Reddit</a></h3>
+	</div>
+
+	<div class="scrollup">
+		<i class="fa fa-chevron-up"></i>
+	</div>
+
+	<script>
+  		window.onload = function () {
+    		document.body.classList.add('loaded_hiding');
+    		window.setTimeout(function () {
+      			document.body.classList.add('loaded');
+      			document.body.classList.remove('loaded_hiding');
+    		}, 500);
+  		}
+	</script>
+
+	<script src="https://kit.fontawesome.com/97f0eddf2a.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<script>
+		$(function() {
+	  		// при нажатии на кнопку scrollup
+	  		$('.scrollup').click(function() {
+	    		// переместиться в верхнюю часть страницы
+	    		$("html, body").animate({
+	      			scrollTop:0
+	    		},0);
+	  		})
+		})
+		// при прокрутке окна (window)
+		$(window).scroll(function() {
+	  		// если пользователь прокрутил страницу более чем на 200px
+	  		if ($(this).scrollTop()>200) {
+	    		// то сделать кнопку scrollup видимой
+	    		$('.scrollup').fadeIn();
+	  		}
+	  		// иначе скрыть кнопку scrollup
+	  		else {
+	    		$('.scrollup').fadeOut();
+	  		}
+		});
+	</script>
+</body>
+</html>
