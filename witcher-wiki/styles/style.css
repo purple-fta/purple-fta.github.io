@@ -82,8 +82,8 @@ p {
 
 .content-img {
 	width: 100%;
-    height: auto;
-    padding: 0 10rem;
+    /*height: auto;*/
+    /*padding: 0 10rem;*/
 }
 
 .caption {
@@ -172,4 +172,63 @@ blockquote p {
 .nav-item>.link:hover {
 	color: white;
 	font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+	.col-lg-3-new {
+    	flex: 0 0 auto;
+    	width: 27.25%;
+	}
+}
+
+.img-row {
+	display: flex;
+	justify-content: center;
+}
+
+body{
+    overflow-x: hidden;
+}
+.my-anim-left {
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: 1.3s;
+}
+
+.activ-anim-left {
+    transform: translateX(0);
+    opacity: 1;
+}
+.my-anim-right {
+    transform: translateX(200%);
+    opacity: 0;
+    transition: 1.3s;
+}
+
+.activ-anim-right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.my-anim-top {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1s .5s;
+}
+
+.activ-anim-top {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.my-anim-bottom {
+    transform: translateY(200%);
+    opacity: 0;
+    transition: 1s .5s;
+}
+
+.activ-anim-bottom {
+    transform: translateY(0);
+    opacity: 1;
 }
